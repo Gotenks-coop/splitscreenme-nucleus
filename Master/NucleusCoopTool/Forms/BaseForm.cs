@@ -75,7 +75,13 @@ namespace Nucleus.Coop
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BaseForm";
             this.Text = "Nucleus Co-op";
+            this.Load += new System.EventHandler(this.BaseForm_Load);
             this.ResumeLayout(false);
+
+        }
+
+        private void BaseForm_Load(object sender, EventArgs e)
+        {
 
         }
     }
